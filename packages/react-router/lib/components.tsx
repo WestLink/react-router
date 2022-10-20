@@ -584,7 +584,7 @@ export function createRoutesFromChildren(
       handle: element.props.handle,
     };
 
-    if (element.props.children) {
+    if (element.props.children) { // TODO children应该是自动赋予到属性里的吧？
       route.children = createRoutesFromChildren(
         element.props.children,
         treePath

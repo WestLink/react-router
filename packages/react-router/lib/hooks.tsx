@@ -382,7 +382,7 @@ export function useRoutes(
     );
   }
 
-  let locationFromContext = useLocation();
+  let locationFromContext = useLocation(); // TODO 要求在router上下文中使用，第一次代码执行的情况下这个context是否ready了？
 
   let location;
   if (locationArg) {
